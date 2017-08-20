@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Contador de Pessoas</string>
+	<string name="total_pessoas_textview">Total de Pessoas</string>
+	<string name="total_homens_textview">Total de Homens</string>
+	<string name="total_mulheres_textview">Total de Mulheres</string>
+	<string name="total_criancas_textview">Total de Crianças</string>
+	<string name="zero_textview">0</string>
+</resources>

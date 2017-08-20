@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">TrocaDeTela</string>
+	<string name="primeira_textview">Primera Activity</string>
+	<string name="segunda_textview">Segunda Activity</string>
+	<string name="terceira_textview">Terceira Activity</string>
+	<string name="proximo_button">Próximo</string>
+	<string name="anterior_button">Anterior</string>
+	<string name="fechar_button">Fechar</string>
+</resources>

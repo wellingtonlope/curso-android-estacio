@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Atividade 1</string>
-    <string name="textview_primeira">Primeira Activity</string>
-    <string name="textview_segunda">Segunda Activity</string>
-    <string name="textview_terceira">Terceira Activity</string>
-    <string name="button_anterior">Anterior</string>
-    <string name="button_proximo">Próximo</string>
-    <string name="button_fechar">Fechar</string>
-</resources>

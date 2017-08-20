@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.android.contadordepessoas.MainActivity"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/total_pessoas_textview"
+		android:textAlignment="center"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:id="@+id/totalPessoasTextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/zero_textview"
+		android:textAlignment="center"
+		android:textSize="100sp"/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/total_homens_textview"
+			android:textAlignment="center"
+			android:textSize="20sp"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+			
+			<Button
+				android:id="@+id/menosHomensButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="-"
+				android:textSize="30sp"/>
+			
+			<TextView
+				android:id="@+id/totalHomensTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="@string/zero_textview"
+				android:textSize="30sp"
+				android:textAlignment="center"/>
+
+			<Button
+				android:id="@+id/maisHomensButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="+"
+				android:textSize="30sp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/total_mulheres_textview"
+			android:textAlignment="center"
+			android:textSize="20sp"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/menosMulheresButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="-"
+				android:textSize="30sp"/>
+			
+			<TextView
+				android:id="@+id/totalMulheresTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="@string/zero_textview"
+				android:textSize="30sp"
+				android:textAlignment="center"/>
+
+			<Button
+				android:id="@+id/maisMulheresButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="+"
+				android:textSize="30sp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/total_criancas_textview"
+			android:textAlignment="center"
+			android:textSize="20sp"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/menosCriancasButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="-"
+				android:textSize="30sp"/>
+			
+			<TextView
+				android:id="@+id/totalCriancasTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="@string/zero_textview"
+				android:textSize="30sp"
+				android:textAlignment="center"/>
+			
+			<Button
+				android:id="@+id/maisCriancasButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="+"
+				android:textSize="30sp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
