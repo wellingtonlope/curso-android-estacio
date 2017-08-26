@@ -1,4 +1,4 @@
-package com.android.contadordepessoas;
+package com.android.dicionario;
 
 import org.junit.Test;
 
