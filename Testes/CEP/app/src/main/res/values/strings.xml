@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">CEP</string>
+	<string name="cep_textview">CEP</string>
+	<string name="cep_edittext">Informe um CEP</string>
+	<string name="estado_textview">Estado: </string>
+	<string name="cidade_textview">Cidade: </string>
+	<string name="bairro_textview">Bairro: </string>
+	<string name="logradouro_textview">Logradouro: </string>
+</resources>
