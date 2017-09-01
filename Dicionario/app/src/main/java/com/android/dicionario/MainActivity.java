@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 				bundle.putString("significado", girias[1][i]);
 				intent.putExtras(bundle);
 				startActivity(intent);
-				finish();
 			}
 		});
 

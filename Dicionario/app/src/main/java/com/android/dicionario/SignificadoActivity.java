@@ -12,6 +12,7 @@ public class SignificadoActivity extends AppCompatActivity {
 	TextView giriaTextView;
 	TextView significadoTextView;
 	Button voltarButton;
+	Button compartilharButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,10 @@ public class SignificadoActivity extends AppCompatActivity {
 		giriaTextView = (TextView) findViewById(R.id.giriaTextView);
 		significadoTextView = (TextView) findViewById(R.id.significadoTextView);
 		voltarButton = (Button) findViewById(R.id.voltarButton);
+		compartilharButton = (Button) findViewById(R.id.compartilharButton);
 
 		final Intent intent = getIntent();
-		Bundle bundle = intent.getExtras();
+		final Bundle bundle = intent.getExtras();
 		String giria = bundle.getString("giria");
 		String significado = bundle.getString("significado");
 
@@ -38,6 +40,26 @@ public class SignificadoActivity extends AppCompatActivity {
 				finish();
 			}
 		});
+
+		compartilharButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				String textMessage = "Giria: " + bundle.getString("giria") + "\nDefinição: " + bundle.getString("significado");
+
+				// Create the text message with a string
+				Intent sendIntent = new Intent();
+				sendIntent.setAction(Intent.ACTION_SEND);
+				sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);
+				sendIntent.setType("text/plain");
+
+				// Verify that the intent will resolve to an activity
+				if (sendIntent.resolveActivity(getPackageManager()) != null) {
+					startActivity(sendIntent);
+				}
+			}
+		});
+
 
 	}
 }

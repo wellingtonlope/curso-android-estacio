@@ -28,6 +28,13 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="30dp"
-		android:text="Voltar"/>
+		android:text="@string/voltar_button"/>
+
+	<Button
+		android:id="@+id/compartilharButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="@string/compartilhar_button"/>
 
 </LinearLayout>
