@@ -1,0 +1,18 @@
+<resources>
+	<string name="app_name">Taxa Metabólica  Basal</string>
+	<string name="altura_textview">Altura (cm):</string>
+	<string name="peso_textview">Peso (kg):</string>
+	<string name="idade_textview">Idade (anos):</string>
+	<string name="sexo_textview">Sexo:</string>
+	<string name="sexomasculino_radiobutton">Masculino</string>
+	<string name="sexofeminino_radiobutton">Feminino</string>
+	<string name="nivel_textview">Nível de atividade física</string>
+	<string name="leve_radiobutton">Leve</string>
+	<string name="moderado_radiobutton">Moderado</string>
+	<string name="intenso_radiobutton">Intenso</string>
+	<string name="resultado_agrupados_textview">Resultado Agrupados</string>
+	<string name="semana_checkbox">Apresentar resultado para a semana</string>
+	<string name="mes_checkbox">Apresentar resultado para o mês</string>
+	<string name="resultado_textview">Para Calcular, clique no botão abaixo</string>
+	<string name="calcular_button">Calcular</string>
+</resources>

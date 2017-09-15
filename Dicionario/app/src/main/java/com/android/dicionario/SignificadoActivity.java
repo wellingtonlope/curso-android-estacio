@@ -7,12 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class SignificadoActivity extends AppCompatActivity {
 
 	TextView giriaTextView;
 	TextView significadoTextView;
 	Button voltarButton;
 	Button compartilharButton;
+	TextView teste;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +61,7 @@ public class SignificadoActivity extends AppCompatActivity {
 				// Verify that the intent will resolve to an activity
 				if (sendIntent.resolveActivity(getPackageManager()) != null) {
 					startActivity(sendIntent);
+
 				}
 			}
 		});

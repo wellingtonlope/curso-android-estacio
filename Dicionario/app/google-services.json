@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1067836142009",
+    "firebase_url": "https://projeto-teste-aef44.firebaseio.com",
+    "project_id": "projeto-teste-aef44",
+    "storage_bucket": "projeto-teste-aef44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067836142009:android:9da5e722992c019c",
+        "android_client_info": {
+          "package_name": "com.android.dicionario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067836142009-gvcu2afupt3prb6o6is8hcgfvqspn7le.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.dicionario",
+            "certificate_hash": "6ba4b74e0df49026594a39af9f331d948cecb94c"
+          }
+        },
+        {
+          "client_id": "1067836142009-bbuk2h616p8urr3lpni0nl9jot8g9j7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA04FoGo3JnWu0l6HCppmFOvdzL-m8yB9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067836142009-bbuk2h616p8urr3lpni0nl9jot8g9j7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.android.taxametablicabasal.MainActivity">
+
+	<LinearLayout
+		android:layout_margin="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/altura_textview"/>
+		
+		<EditText
+			android:id="@+id/alturaEditText"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:inputType="number"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/peso_textview"/>
+		
+		<EditText
+			android:id="@+id/pesoEditText"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:inputType="numberDecimal"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/idade_textview"/>
+		
+		<EditText
+			android:id="@+id/idadeEditText"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:inputType="number"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/sexo_textview"/>
+
+		<RadioGroup
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/masculinoRadioButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:checked="true"
+				android:text="@string/sexomasculino_radiobutton"/>
+			<RadioButton
+				android:id="@+id/femininoRadioButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/sexofeminino_radiobutton"/>
+		</RadioGroup>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/nivel_textview"/>
+		
+		<RadioGroup
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/leveRadioButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:checked="true"
+				android:text="@string/leve_radiobutton"/>
+			<RadioButton
+				android:id="@+id/moderadoRadioButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/moderado_radiobutton"/>
+			<RadioButton
+				android:id="@+id/intensoRadioButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/intenso_radiobutton"/>
+		</RadioGroup>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/resultado_agrupados_textview"/>
+
+		<CheckBox
+			android:id="@+id/semanaCheckBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/semana_checkbox"/>
+
+		<CheckBox
+			android:id="@+id/mesCheckBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/mes_checkbox"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/resultado_textview"/>
+		
+		<Button
+			android:id="@+id/calcularButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/calcular_button"
+			android:textSize="30sp"/>
+
+	</LinearLayout>
+
+</ScrollView>
