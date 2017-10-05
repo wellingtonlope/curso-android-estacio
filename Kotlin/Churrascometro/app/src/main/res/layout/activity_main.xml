@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.android.churrascometro.MainActivity"
+	tools:layout_editor_absoluteX="0dp"
+	tools:layout_editor_absoluteY="81dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_width="200dp"
+			android:layout_height="200dp"
+			android:layout_gravity="center"
+			android:src="@drawable/grill"/>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="bottom">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@drawable/radius"
+
+			android:orientation="vertical"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textAlignment="center"
+				android:text="@string/convidados_textview"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start"
+					android:text="@string/homens_textview"
+					android:textAlignment="textStart"/>
+
+				<TextView
+					android:id="@+id/homensTextView"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="end"
+					android:text="0"
+					android:textAlignment="textEnd"/>
+
+			</LinearLayout>
+
+			<SeekBar
+				android:id="@+id/homensSeekBar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:max="100"
+				android:min="0"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start"
+					android:text="@string/mulheres_textview"
+					android:textAlignment="textStart"/>
+
+				<TextView
+					android:id="@+id/mulheresTextView"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="end"
+					android:text="0"
+					android:textAlignment="textEnd"/>
+
+			</LinearLayout>
+
+			<SeekBar
+				android:id="@+id/mulheresSeekBar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:max="100"
+				android:min="0"/>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="start"
+					android:text="@string/criancas_textview"
+					android:textAlignment="textStart"/>
+
+				<TextView
+					android:id="@+id/criancasTextView"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="end"
+					android:text="0"
+					android:textAlignment="textEnd"/>
+
+			</LinearLayout>
+
+			<SeekBar
+				android:id="@+id/criancasSeekBar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:max="100"
+				android:min="0"/>
+
+			<Button
+				android:id="@+id/calcularButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/calcular_button"
+				android:textSize="20sp"
+				android:background="@color/colorBackground"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Churrascometro</string>
+	<string name="convidados_textview">QUANTOS CONVIDADOS VOCÊ TERÁ</string>
+	<string name="homens_textview">HOMENS</string>
+	<string name="mulheres_textview">MULHERES</string>
+	<string name="criancas_textview">CRIANÇAS</string>
+	<string name="calcular_button">CALCULAR</string>
+</resources>
