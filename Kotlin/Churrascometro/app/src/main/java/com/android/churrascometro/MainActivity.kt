@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ProgressBar
 import android.widget.SeekBar
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
@@ -56,11 +57,16 @@ class MainActivity : AppCompatActivity() {
         })
 
         calcularButton.setOnClickListener {
-            var intent = Intent(applicationContext, ListaActivity::class.java)
-            intent.putExtra("homens", homensSeekBar.progress)
-            intent.putExtra("mulheres", mulheresSeekBar.progress)
-            intent.putExtra("criancas", criancasSeekBar.progress)
-            startActivity(intent)
+            if(homensSeekBar.progress > 0 || mulheresSeekBar.progress > 0 || criancasSeekBar.progress > 0) {
+                var intent = Intent(applicationContext, ListaActivity::class.java)
+                intent.putExtra("homens", homensSeekBar.progress)
+                intent.putExtra("mulheres", mulheresSeekBar.progress)
+                intent.putExtra("criancas", criancasSeekBar.progress)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Você precisa ter no minimo uma pessoa na festa :)", Toast.LENGTH_SHORT).show()
+            }
+
         }
 
     }

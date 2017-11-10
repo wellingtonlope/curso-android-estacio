@@ -30,7 +30,7 @@ class ListaActivity : AppCompatActivity() {
         val meat: Compra = Compra(R.drawable.meat,"Carne", "${df.format(calcMeat())} kg")
         val sausage = Compra(R.drawable.sausage, "Linguiça", "${df.format(calcSausage())} kg")
         val rice = Compra(R.drawable.rice, "Arroz", "${df.format(calcRice())} kg")
-        val farofa = Compra(R.drawable.farofa, "Farofa", "${df.format(calcFarofa())} kg")
+        val farofa = Compra(R.drawable.farofa, "Farofa Temperada", "${df.format(calcFarofa())} kg")
         val salad = Compra(R.drawable.salad, "Salada", "à vontade")
         val coal = Compra(R.drawable.coal, "Carvão", "${calcCoal()} sacos(8kg)")
         val salt = Compra(R.drawable.salt, "Sal grosso", "${calcSalt()} saco(s)")
@@ -40,7 +40,7 @@ class ListaActivity : AppCompatActivity() {
         val soda = Compra(R.drawable.soda, "Refrigerante", "${df.format(calcSoda())} L")
         val water = Compra(R.drawable.water, "Água", "${df.format(calcSoda())} L")
 
-        val compras: List<Compra> = listOf(meat, sausage, rice, farofa, salad, coal, salt, beer, liquor, lemon, soda, water)
+        val compras: List<Compra> = listOf(meat, sausage/*, rice*/, farofa, salad, coal, salt, beer/*, liquor, lemon*/, soda, water)
 
         var adapter = CompraAdapter(compras, this)
 
@@ -48,21 +48,39 @@ class ListaActivity : AppCompatActivity() {
 
     }
 
-    fun calcMeat() = ((homens + mulheres) * 400.00 + criancas * 300.00) / 1000.00
+    fun calcMeat() = ((homens * 300.00) + (mulheres * 200.00) + (criancas * 150.00)) / 1000.00
 
-    fun calcSausage() = (calcMeat() * 40.00) / 100.00
+    fun calcSausage() = ((homens * 100.00) + (mulheres * 100.00) + (criancas * 100.00)) / 1000.00
 
     fun calcRice() = ((homens + mulheres + criancas) * 90) / 1000.00
 
     fun calcFarofa() = ((homens + mulheres + criancas) * 110) / 1000.00
 
-    fun calcCoal() = ((calcMeat() + calcSausage()) / 5).toInt()
+    fun calcCoal(): Int {
+        if(((calcMeat() + calcSausage()) / 5).toInt() <= 0) {
+            return 1
+        } else {
+            return ((calcMeat() + calcSausage()) / 5).toInt()
+        }
+    }
 
-    fun calcSalt() = ((calcMeat() + calcSausage()) / 25).toInt()
+    fun calcSalt(): Int {
+        if(((calcMeat() + calcSausage()) / 25).toInt() <= 0) {
+            return 1
+        } else {
+            return ((calcMeat() + calcSausage()) / 25).toInt()
+        }
+    }
 
-    fun calcBeer() = (homens + mulheres + criancas) * 6
+    fun calcBeer() = (homens * 4)+ (mulheres * 2)
 
-    fun calcLiquor() = (homens + mulheres + criancas) / 15
+    fun calcLiquor(): Int {
+        if((homens + mulheres + criancas) / 15 <= 0) {
+            return 1
+        } else {
+            return (homens + mulheres + criancas) / 15
+        }
+    }
 
     fun calcLemon() = (((homens + mulheres + criancas) * 300) * 2) / 300
 
